@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>Unity WebGL Player | CanvasVideoPlayer</title>
+  </head>
+  <body style="text-align: center">
+    <canvas id="unity-canvas" style="width: 1280px; height: 720px; background: #231F20"></canvas>
+    <script src="Build/521b70268c8fab9841964e1b75279d0c.js"></script>
+    <script>
+      createUnityInstance(document.querySelector("#unity-canvas"), {
+        dataUrl: "Build/4477e352bfb237121e4cb5c2da9a2891.data",
+        frameworkUrl: "Build/bf66ff072eafbe4acb0e2d31c26d2f36.js",
+        codeUrl: "Build/2a36de05b12ffe6132c5dab426785314.wasm",
+        streamingAssetsUrl: "StreamingAssets",
+        companyName: "com.damacservices.canvasvideoplayer",
+        productName: "CanvasVideoPlayer",
+        productVersion: "0.2",
+      });
+    </script>
+  </body>
+</html>
